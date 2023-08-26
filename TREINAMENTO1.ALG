@@ -16,10 +16,10 @@ Inicio
       escreval("Para começar seu atendimento digite '1'")
       leia(init)
       
-     //Usei a estrutura (repita-ate) para que o programa só termine assim que o usuário desejar
+     //Usei a estrutura (enquanto) para que o programa só termine assim que o usuário desejar
      // se for difente de '1'  o programa se encerra.
 
-      enquanto init = 1 faca
+      repita
          // login  e senha para acessar os serviços
          
          
@@ -175,14 +175,15 @@ Inicio
          caso 4
               escreval("SEU SADO ATUAL É: R$", saldo:4:2)
          fimescolha
-
+         escreval
          // controle do looping para o usuário fazer quantas operação desejar.
-         escreval("VOCÊ DESEJA FAZER OUTRA OPERAÇÃO? SE SIM, DIGITE '1'")
+         escreval("SE VOCÊ DESEJA FAZER OUTRA OPERAÇÃO DIGITE '1'")
+         escreval("SE VOCÊ DESEJA ENCERRAR A OPERAÇÃO DIGITE '2'")
          escreva("OPÇÃO: ")
          leia(init)
          limpatela
          
-      fimenquanto
+      ate (init <> 1)
       // Quem estiver visualizando, fique a vontade para fazer alterações do jeito que desejar.
       // #Jesus_Te_Ama_Eu_Nao
 Fimalgoritmo
