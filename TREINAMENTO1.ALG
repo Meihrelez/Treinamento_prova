@@ -16,13 +16,11 @@ Inicio
       escreval("Para começar seu atendimento digite '1'")
       leia(init)
       
-     //Usei a estrutura (enquanto) para que o programa só termine assim que o usuário desejar
+     //Usei a estrutura (repita-ate) para que o programa só termine assim que o usuário desejar
      // se for difente de '1'  o programa se encerra.
 
       repita
          // login  e senha para acessar os serviços
-         
-         
          escrevaL("DIGITE SEU LONGIN E SENHA PARA ACESSAR SUA CONTA:")
          escreva("LOGIN: ")
          leia(login)
@@ -63,7 +61,6 @@ Inicio
          //(Igual como consta no Login e senha?)
 
          enquanto (operacao <= 0) ou (operacao > 4) faca
-         
             limpatela
             escreval("DIGITO INVÁLIDO, POR FAVOR, DIGITE UM NÚMERO VÁLIDO A SEGUIR.")
             escreval("DIGITE '1' PARA REALIZAR UM DEPÓSITO.")
@@ -71,10 +68,7 @@ Inicio
             escreval("DIGITE '3' PARA REALIZAR UM EMPRÉSTIMO.")
             escreval("DIGITE '4' PARA VERIFICAR O SALDO DA SUA CONTA")
             leia(operacao)
-
          fimenquanto
-         
-         
 
          escolha operacao
          // Aqui pra quem não entendeu, eu declaro cada variável com um valor atribuido,
