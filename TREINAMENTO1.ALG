@@ -4,6 +4,7 @@ Algoritmo "treinamento1"
 //escolha/caso, tendo em vista que será de extrema ajuda você descrever a função de cada
 // bloco de código com comentários para ajudar no entendimento dos mesmos.
 
+
 Var
    login, password  : caractere
    init, tentativas, operacao, parcelas : inteiro
@@ -16,10 +17,10 @@ Inicio
       escreval("Para começar seu atendimento digite '1'")
       leia(init)
       
-     //Usei a estrutura (repita-ate) para que o programa só termine assim que o usuário desejar
+     //Usei a estrutura (enquanto) para que o programa só termine assim que o usuário desejar
      // se for difente de '1'  o programa se encerra.
 
-      repita
+     enquanto init = 1 faca
          // login  e senha para acessar os serviços
          escrevaL("DIGITE SEU LONGIN E SENHA PARA ACESSAR SUA CONTA:")
          escreva("LOGIN: ")
@@ -177,7 +178,7 @@ Inicio
          leia(init)
          limpatela
          
-      ate (init <> 1)
+      fimenquanto
       // Quem estiver visualizando, fique a vontade para fazer alterações do jeito que desejar.
       // #Jesus_Te_Ama_Eu_Nao
 Fimalgoritmo
